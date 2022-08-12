@@ -1,4 +1,5 @@
 -- removed cursor
+-- changed cfg folder
 
 local library = { 
 	flags = { }, 
@@ -3336,8 +3337,7 @@ function library:CreateWindow(name, size, hidebutton)
 
         function tab:CreateConfigSystem(side)
             local configSystem = { }
-
-            configSystem.configFolder = window.name .. "/" .. tostring(game.PlaceId)
+            configSystem.configFolder = "nyula/untitledhood"
             if (not isfolder(configSystem.configFolder)) then
                 makefolder(configSystem.configFolder)
             end
